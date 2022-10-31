@@ -1,4 +1,5 @@
 ## NHentai Downloader V2
+[![image](https://img.shields.io/github/v/release/Charlzk05/NHentai-Downloader-V2)](https://github.com/Charlzk05/NHentai-Downloader-V2/releases/tag/v1.0.0)
 
 A NHentai Downloader that uses cookies to bypass "nhentai.net" cloudflare
 
