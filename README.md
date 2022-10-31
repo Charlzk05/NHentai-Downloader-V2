@@ -21,8 +21,7 @@ A NHentai Downloader that uses cookies to bypass "nhentai.net" cloudflare
    ```
 2. Run the program `main.py`
 3. Insert your nhentai id that you want to download
-
-- Enjoy
+4. Enjoy!
 
 ### Result
 
@@ -40,7 +39,7 @@ A NHentai Downloader that uses cookies to bypass "nhentai.net" cloudflare
 
    ![image](https://user-images.githubusercontent.com/104715127/198975400-c035d020-641a-4d45-ae69-d1d720589c47.png)
 
-- Enjoy
+5. Enjoy
 
 ### Packages used
 - Requests
