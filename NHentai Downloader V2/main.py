@@ -30,13 +30,13 @@ class Main:
                     file_name = img.split("/")
                     response = requests.get(img, cookies=cookies, headers=headers)
 
-                    if (os.path.isdir(f"./{file_name[4]}")):
-                        with open(f"./{file_name[4]}/{file_name[5]}", "wb") as output:
+                    if (os.path.isdir(f"./{idInput}")):
+                        with open(f"./{idInput}/{file_name[5]}", "wb") as output:
                             output.write(response.content)
                             print(file_name[5] + " - Done!")
                     else:
-                        os.makedirs(f"./{file_name[4]}")
-                        with open(f"./{file_name[4]}/{file_name[5]}", "wb") as output:
+                        os.makedirs(f"./{idInput}")
+                        with open(f"./{idInput}/{file_name[5]}", "wb") as output:
                             output.write(response.content)
                             print(file_name[5] + " - Done!")
                 print("Operation Done!")
