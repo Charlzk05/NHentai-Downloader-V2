@@ -17,7 +17,8 @@ A NHentai Downloader that uses cookies to bypass "nhentai.net" cloudflare
    ```json
    {
      "cf_clearance": "<Your cf_clearance cookie>",
-     "csrftoken": "<Your csrftoken cookie>"
+     "csrftoken": "<Your csrftoken cookie>",
+     "userAgent": "<Your user-agent identify>"
    }
    ```
 2. Run the program `main.py`
@@ -28,7 +29,7 @@ A NHentai Downloader that uses cookies to bypass "nhentai.net" cloudflare
 
 ![Screenshot 2022-10-31 171043](https://user-images.githubusercontent.com/104715127/198975722-bf91294b-ac35-47ef-97e7-9f098ba99697.png)
 
-## How to get your nhentai cookie
+## How to get your nhentai cookie and user-agent
 
 1. Go to "nhentai.net" website
 2. View site information or the lock icon on the address bar
@@ -40,7 +41,15 @@ A NHentai Downloader that uses cookies to bypass "nhentai.net" cloudflare
 
    ![image](https://user-images.githubusercontent.com/104715127/198975400-c035d020-641a-4d45-ae69-d1d720589c47.png)
 
-5. Enjoy
+5. Open your Developer Tools or press `f12` and go to "Console" tab and paste this code
+
+   ```js
+   // Copy your user-agent automatically to clipboard
+   copy(navigator.userAgent)
+   ```
+   ![image](https://user-images.githubusercontent.com/113793173/210773239-f153f2ad-16f5-40d9-a60d-57df6b28a507.png)
+
+6. Enjoy
 
 ### Packages used
 - Requests

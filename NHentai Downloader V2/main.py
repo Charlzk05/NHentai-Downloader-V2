@@ -6,7 +6,7 @@ class Main:
         with open("./Cookies.json", "r") as cookiesInput:
             cookiesJson = json.loads(cookiesInput.read())
 
-            if cookiesJson["csrftoken"] == "" or cookiesJson["cf_clearance"] == "":
+            if cookiesJson["csrftoken"] == "" or cookiesJson["cf_clearance"] == "" or cookiesJson["user-agent"] == "":
                 print("Please insert a cookie ...")
             else:
                 cookies = {
@@ -16,7 +16,7 @@ class Main:
 
                 headers = {
                     'upgrade-insecure-requests': '1',
-                    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',
+                    'user-agent': cookiesJson["user-agent"],
                 }
 
                 response = requests.get(f"https://nhentai.net/g/{str(id)}", cookies=cookies, headers=headers)
